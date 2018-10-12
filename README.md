@@ -11,4 +11,4 @@ Supported Server System
 Linux 6(RadHat,OracleLinux,CentOS);Linux 7(RadHat,OracleLinux,CentOS);AIX 7.
 
 Frame
-Beego;Bootstrap
+Beego;Bootstrap.
