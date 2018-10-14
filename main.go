@@ -1,11 +1,11 @@
 package main
 
 import (
-	_ "Ipp/routers"
+	_ "ipp/routers"
+
 	"github.com/astaxie/beego"
 )
 
 func main() {
 	beego.Run()
 }
-
