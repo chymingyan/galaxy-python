@@ -9,6 +9,6 @@ type LoginController struct {
 }
 
 func (this *LoginController) Login() {
-	this.Data["Test"] = "测试登录界面"
+	this.Data["Login"] = "测试登录界面"
 	this.TplName = "login.tpl"
 }
