@@ -12,16 +12,27 @@
 <body>
 <div class="background">
 <div class="loginBox">
-            <h1><a href="javascript:;" class="logo"></a><span>| 客户体验管理领导者</span></h1>
+            <h1><a href="javascript:;" class="logo"></a><span>| 智能巡检平台领导者</span></h1>
             <div class="lgWrap" id="Login">
-                <h5 style="font-weight: 400;font-size: 1.4em;">客户体验管理系统用户登录</h5>
+                <h5 style="font-weight: 400;font-size: 1.4em;">智能巡检系统平台用户登录</h5>
                 <div class="lgBox">
                     <span id="warn_message"></span>
-                    <ul style="margin-top:5%;margin-bottom:7%;">
-                        <li class="userName">账号：
+                    <ul style="margin-top:5%;margin-bottom:5%;">
+					 <li class="userName">
+					<lable style="display:inline-block;width:85px;">数据库地址：</lable>
+                            <input type="text" class="text" id="hostip" name="hostip">
+                        </li>
+							 <li class="userName">
+							<lable style="display:inline-block;width:85px;">数据库端口：</lable>
+                            <input type="text" class="text" id="hostport" name="hostport">
+                        </li>
+						 <li class="userName"><lable style="display:inline-block;width:85px;">服务名称：</lable>
+                            <input type="text" class="text" id="servicename" name="servicename">
+                        </li>
+                        <li class="userName"><lable style="display:inline-block;width:85px;">账号：</lable>
                             <input type="text" class="text" id="username" name="username">
                         </li>
-                        <li class="passWord">密码：
+                        <li class="passWord"><lable style="display:inline-block;width:85px;">密码：</lable>
                             <input class="text" type="password" id="password" name="password">
                         </li>
                         <li style="margin-left: 136px;font-size: 10px">

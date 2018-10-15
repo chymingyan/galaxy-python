@@ -12,7 +12,7 @@ h6,.h6{font-size:1em;line-height:1.5;}/*12px*/
 ul,ol{list-style:none;}
 table{border-collapse:collapse;}
 td,th{padding:0 10px;line-height:1.5;}
-input.text{padding-left:5px;line-height:25px;}
+input.text{padding-right:5px;line-height:25px;}
 lable{line-height:20px;}
 input.radio,input.checkbox{position:relative;top:3px;}
 a{text-decoration:none;}
@@ -76,7 +76,7 @@ fieldset, img, input, button {
 }
 /*登陆界面*/
 .background{
-    background: url(../../static/img/background.jpg) no-repeat;
+    background: url(/static/img/background.jpg) no-repeat;
     width:100%;
     height:100%;
     background-size:100% 100%;
@@ -85,22 +85,22 @@ fieldset, img, input, button {
 }
 .loginBox{
     width: 500px;
-    height: 350px;
+    height: 490px;
     position: absolute;
-    top:170px;
+    top:100px;
     right: 150px;
 }
 .logo{
     width: 162px;
     height: 30px;
     display: inline-block;
-    background: url("../../status/img/denglu.png")no-repeat;
+    background: url("/static/img/denglu.png")no-repeat;
     vertical-align: middle;
     margin-left: 10px;
 }
 .lgWrap{
     width: 500px;
-    height: 320px;
+    height: 460px;
     background-color: #fff;
     border-radius: 5px;
     margin-top: 5px ;
@@ -113,7 +113,7 @@ fieldset, img, input, button {
 .lgBox li{
     font-size: 14px;
     color: #333333;
-    margin-left: 90px;
+    margin-left: 80px;
 }
 .lgBox input{
     background-color: #ebebe4;
