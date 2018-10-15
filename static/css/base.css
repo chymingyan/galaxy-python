@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,input{padding:0;margin:0;}
+body{font-size:12px;color:#fff;background:#cbd6d9;font-family:微软雅黑;line-height:.1; min-width:800px;overflow: auto;}
+h1,.h1{font-size:18px;line-height:1.5;font-weight: 400}/*24px*/
+h2,.h2{font-size:1.7em;line-height:1.5;}/*20px*/
+h3,.h3{font-size:1.5em;line-height:1.5;}/*18px*/
+h4,.h4{font-size:1.4em;line-height:1.5;}/*16px*/
+h5,.h5{font-size:1.2em;line-height:1.5;}/*14px*/
+h6,.h6{font-size:1em;line-height:1.5;}/*12px*/
+.fontS12{font-size:12px;}
+ul,ol{list-style:none;}
+table{border-collapse:collapse;}
+td,th{padding:0 10px;line-height:1.5;}
+input.text{padding-left:5px;line-height:25px;}
+lable{line-height:20px;}
+input.radio,input.checkbox{position:relative;top:3px;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/*行高*/
+.lh20{line-height:20px;}
+.lh22{line-height:22px;}
+.lh25{line-height:25px;}
+.lh28{line-height:28px;}
+.lh30{line-height:30px;}
+.lh40{line-height:40px;}
+.lh45{line-height:45px;}
+.lh50{line-height:50px;}
+.cc{color:#e40082;}
+/*首行缩进*/
+p.indent{text-indent:2em;}
+/*浮动*/
+.fl{float:left;}
+.fr{float:right;}
+/*清楚浮动*/
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.clearfix{zoom:1;}
+.clearfix:after{content:'';clear:both;display:block;}
+/*单行文字超出省略*/
+.textEllipses{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.textEllipses1 {max-width: 100px;overflow: hidden;white-space: nowrap; text-overflow:ellipsis;}
+.wordWrap{word-wrap:break-word;}
+/* .BottomTriangle{border:6px solid transparent;border-top:6px solid #fff;height:0;width:0;overflow:hidden;line-height:0;display:block;} */
+.sanjiao{border:6px solid transparent;border-top:6px solid #000;height:0;width:0;overflow:hidden;line-height:0;display:block;}
+/*padding公用样式*/
+.padding{padding:10px 0 0 10px;}
+/*margin公用样式*/
+.margin{margin:10px 0 10px 0;}
+.mt10{margin-top:10px;}
+.mr10{margin-right:10px;}
+.mb10{margin-bottom:10px;}
+.ml10{margin-left:10px;}
+.mr20{margin-right:20px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mb30{margin-bottom:30px;}
+.mr30{margin-right:30px;}
+.mr65{margin-right:65px;}
+.ml25{margin-left:25px;}
+.ml120{margin-left:120px;}
+.ml180{margin-left:180px;}
+.pl10{padding-left:10px;}
+.pr10{padding-right:10px;}
+.pb30{padding-bottom:30px;}
+.ml30{margin-left:30px;}
+/*border公用样式*/
+.border{border:1px solid #dddddd;}
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+/*登陆界面*/
+.background{
+    background: url(../../static/img/background.jpg) no-repeat;
+    width:100%;
+    height:100%;
+    background-size:100% 100%;
+    position:absolute;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='background.jpg',sizingMethod='scale');
+}
+.loginBox{
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top:170px;
+    right: 150px;
+}
+.logo{
+    width: 162px;
+    height: 30px;
+    display: inline-block;
+    background: url("../../status/img/denglu.png")no-repeat;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.lgWrap{
+    width: 500px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 5px ;
+}
+.lgWrap h5{
+    color: #e56465;
+    padding-left: 150px;
+    padding-top: 25px;
+}
+.lgBox li{
+    font-size: 14px;
+    color: #333333;
+    margin-left: 90px;
+}
+.lgBox input{
+    background-color: #ebebe4;
+    border: 1px solid #cccc;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.lgBox input.sm{
+    background-color: #ebebe4;
+    border: 1px solid #cccc;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.lgBox input.denglu{
+    width: 100px;
+    height: 40px;
+    background-color: #15a16d;
+    color: #fff;
+}
+.lgBox li.submit{
+    margin-left: 214px;
+    margin-top: 13px;
+}
+.tishi{color: #999999;font-size: 10px;margin-left: 22px;}
+.explainTheCartridge{
+    position: absolute;
+    width: 800px;
+    height: 45px;
+    background-color: #fffce1;
+    top: 49px;
+    left: 116px;
+    display: none;
+    z-index: 1100;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ebd482;
+}
+.explainTheCartridges{
+    position: absolute;
+    background-color: #fffce1;
+    top: 10px;
+    left: 82px;
+    display: none;
+    z-index: 1100;
+    border: 1px solid #ebd482;
+    font-size: 10px;
+    padding: 5px;
+}
