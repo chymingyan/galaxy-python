@@ -9,6 +9,8 @@ type InspectionController struct {
 }
 
 func (this *InspectionController) Insp() {
-	this.Data["Test"] = "巡检界面"
+	this.Data["Website"] = "https://github.com/chymingyan"
+	this.Data["Email"] = "chen_haiyan@hotmail.com"
+	this.Data["Index"] = "巡检页面"
 	this.TplName = "index.tpl"
 }

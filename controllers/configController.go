@@ -9,6 +9,8 @@ type ConfigController struct {
 }
 
 func (this *ConfigController) Config() {
-	this.Data["Test"] = "配置界面"
+	this.Data["Website"] = "https://github.com/chymingyan"
+	this.Data["Email"] = "chen_haiyan@hotmail.com"
+	this.Data["Index"] = "配置页面"
 	this.TplName = "index.tpl"
 }

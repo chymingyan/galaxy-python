@@ -80,7 +80,11 @@
       Intelligent Patrol Platform is a set of information patrol system aiming at Oracle, Mysql and other databases and Linux related systems to help operators and maintainers collect information and generate reports quickly.
     </div>
 	<div class="description">
+<<<<<<< HEAD
 	{{.Test}}
+=======
+	{{.Index}}
+>>>>>>> 679eb364159619aba19b71c133aca4fc52b0d7d0
 	</div>
   </header>
   <footer>

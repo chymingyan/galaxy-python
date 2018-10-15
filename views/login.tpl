@@ -77,7 +77,7 @@
   <header>
     <h1 class="logo">Welcome to Intelligent patrol platform</h1>
     <div class="description">
-      Intelligent Patrol Platform is a set of information patrol system aiming at Oracle, Mysql and other databases and Linux related systems to help operators and maintainers collect information and generate reports quickly.
+     	{{.Login}}
     </div>
   </header>
   <footer>
