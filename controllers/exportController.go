@@ -8,6 +8,7 @@ type ExportController struct {
 	beego.Controller
 }
 
-func (this *ExportController) export() {
+func (this *ExportController) Export() {
+	this.Data["Test"] = "报表界面"
 	this.TplName = "index.tpl"
 }
