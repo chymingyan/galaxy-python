@@ -35,7 +35,7 @@
                         <li class="passWord"><lable style="display:inline-block;width:85px;">密码：</lable>
                             <input class="text" type="password" id="password" name="password">
                         </li>
-                        <li style="margin-left: 136px;font-size: 10px">
+                        <li style="margin-left: 170px;font-size: 10px">
                             <input id="remember" class="sm" type="checkbox">
                             记住密码
                         </li>
@@ -71,6 +71,7 @@
   
   
 
-  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/login.js"></script>
 </body>
 </html>

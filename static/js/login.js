@@ -2,7 +2,13 @@ $('#password').focus(function () {
         var user = $('#username').val();
         if (getCookie('user') == user){
             var pwd = getCookie('pswd');
+	     var hostip=getCookie('hostip');
+	     var hostport=getCookie('hostport');
+	     var servicename=getCookie('servicename');
             $('#password').val(pwd);
+	     $('#hostip').val(hostip);
+	     $('#hostport').val(hostport);
+	     $('#servicename').val(servicename);
             $('input[type="checkbox"]').attr('checked','checked')
         }
     }
@@ -13,6 +19,9 @@ $('#remember').onchange = function(){
     if(!this.checked){
         delCookie('user');
         delCookie('pswd')
+	 delCookie('hostip');
+	delCookie('hostport');
+	delCookie('servicename');
     }
 };
 
@@ -29,21 +38,28 @@ $('#loginbtn').click(function () {
 function login() {
     var userName = $('#username').val();
     var password = $('#password').val();
-    if (userName === ''||userName === undefined||password === ''||password === undefined) {
-        alert("");
+    var hostip=$('#hostip').val();
+    var hostport=$('#hostport').val();
+    var servicename=$('#servicename').val();
+    if (userName === ''||userName === undefined||password === ''||password === undefined||hostip===''||hostip===undefined||hostport===''||hostport===undefined||servicename===''||servicename===undefined)
+    {
+        alert('userName:'+userName+'hostIp:'+hostip+'password:'+password+'hostPort:'+hostport+'serviceName:'+servicename);
         return false
     }
     $.ajax({
-        url:url.login,
-        data:{userName:userName,password:password},
+        url:"/login",
+        data:{userName:userName,password:password,hostIp:hostip,hostPort:hostport,serviceName:servicename},
         type:"post",
         dataType:"json",
         success:function (root) {
             if(root === 'success'){
-                window.location.href='index.html';
+                window.location.href='index.tpl';
                 if($('input[type="checkbox"]:checked')){
                     setCookie('user',userName,7); //
-                    setCookie('pswd',password,7) //
+                    setCookie('pswd',password,7); //
+		       setCookie('hostip',hostip,7);
+			setCookie('hostport',hostport,7);
+			setCookie('servicename',servicename,7)
                 }
             }else if(root === ""){
                 alert(root);
@@ -51,10 +67,13 @@ function login() {
                 $('#active').attr('style','display:block');
                 getCode()
             }else if(root === ""){
-                window.location.href='index.ptl';
+                window.location.href='index.tpl';
                 if($('input[type="checkbox"]:checked')){
                     setCookie('user',userName,7); //
                     setCookie('pswd',password,7) //
+			setCookie('hostip',hostip,7);
+			setCookie('hostport',hostport,7);
+			setCookie('servicename',servicename,7)
                 }
             }else if(root === ""){
                 alert(root);
