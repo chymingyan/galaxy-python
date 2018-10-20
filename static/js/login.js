@@ -51,9 +51,10 @@ function login() {
         data:{userName:userName,password:password,hostIp:hostip,hostPort:hostport,serviceName:servicename},
         type:"post",
         dataType:"json",
-        success:function (root) {
-            if(root === 'success'){
-                window.location.href='index.tpl';
+		async: false,
+        success:function (msg) {
+            if(msg.Val === 'success'){
+                window.location.href='/';
                 if($('input[type="checkbox"]:checked')){
                     setCookie('user',userName,7); //
                     setCookie('pswd',password,7); //
@@ -61,12 +62,12 @@ function login() {
 			setCookie('hostport',hostport,7);
 			setCookie('servicename',servicename,7)
                 }
-            }else if(root === ""){
+            }else if(msg.Val === ""){
                 alert(root);
                 $('#Login').attr('style','display:none');
                 $('#active').attr('style','display:block');
                 getCode()
-            }else if(root === ""){
+            }else if(msg.Val === ""){
                 window.location.href='index.tpl';
                 if($('input[type="checkbox"]:checked')){
                     setCookie('user',userName,7); //
@@ -75,13 +76,14 @@ function login() {
 			setCookie('hostport',hostport,7);
 			setCookie('servicename',servicename,7)
                 }
-            }else if(root === ""){
+            }else if(msg.Val === ""){
                 alert(root);
                 $('#Login').attr('style','display:none');
                 $('#active').attr('style','display:block');
                 getCode()
             }else {
-                alert(root)
+				var bToObj=JSON.stringify(msg)
+                alert(msg.Val)
             }
         }
     })
