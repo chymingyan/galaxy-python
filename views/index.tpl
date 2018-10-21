@@ -8,7 +8,6 @@
     <title>智能巡检平台</title>
     <link rel="shortcut icon" href="static/img/1234.ico">
     <link rel="stylesheet" href="static/css/base.css">
-	<!--<link rel="stylesheet" href="static/css/iconfont.css">-->
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/sb-admin.css">
     <link rel="stylesheet" href="static/css/style.css">
@@ -77,15 +76,15 @@
             <li class="nav-item returns" style="position: relative;left: 16px">
                 <a href="/" class="nav-link" style="color: #fff;font-size: 14px;">
                     <div class="dropdown return " style="display: inline-block;">
-                    <i class="fa fa-fw fa-sign-index" style="margin:2px 0px 0px 4px;"></i>
-                    <div class="dropdown" style="display: inline-block;">
-                <ul class="dropdown-menu dropdown-return" aria-labelledby="dLabel">
-                    <i class="adminicno" style="left: 10px;top: -7px;"></i>
-                    <li data-toggle="modal" data-target="#myModal" class="navadmin">
-                        首页
-                    </li>
-                </ul>
-                    </div>
+                    	<i class="fa fa-fw fa-sign-index" style="margin:2px 0px 0px 4px;"></i>
+                    		<div class="dropdown" style="display: inline-block;">
+               					 <ul class="dropdown-menu dropdown-return" aria-labelledby="dLabel">
+                   				 <i class="adminicno" style="left: 10px;top: -7px;"></i>
+                   					 <li data-toggle="modal" data-target="#myModal" class="navadmin">
+                        				首页
+                    				</li>
+                				</ul>
+                   			 </div>
                     </div>
                 </a>
             </li>
@@ -93,17 +92,17 @@
             <li class="nav-item abouts" style="position: relative;left: 10px">
                 <a class="nav-link" style="color: #fff;font-size: 14px;" id="pertaining">
                     <div class="dropdown about" style="display: inline-block;">
-                    <i class="fa fa-fw fa-sign-out" style="margin:5px 0px 2px 6px"></i>
-                    <div class="dropdown" style="display: inline-block;">
-                        <ul class="dropdown-menu dropdown-about" aria-labelledby="dLabel">
-                            <i class="adminicno" style="left: 10px;top: -7px;"></i>
-                            <li data-toggle="modal" data-target="#myModal11" class="navadmin">
-                               关于
-                            </li>
-                        </ul>
+                   	 <i class="fa fa-fw fa-sign-out" style="margin:5px 0px 2px 6px"></i>
+                    	<div class="dropdown" style="display: inline-block;">
+                        	<ul class="dropdown-menu dropdown-about" aria-labelledby="dLabel">
+                            	<i class="adminicno" style="left: 10px;top: -7px;"></i>
+                            	<li data-toggle="modal" data-target="#myModal11" class="navadmin">
+                               		关于
+                           		 </li>
+                       		 </ul>
+                    	</div>
                     </div>
-                    </div>
-                    </a>
+                </a>
             </li>
            <!-- <li class="nav-item nav-li"></li>-->
             <li class="nav-item itemli">
@@ -116,11 +115,7 @@
                             <i class="fa fa-fw fa-admin-down" style="cursor: pointer;margin-right: 0px;"></i>
                         </button>
                         <ul class="dropdown-menu dropdown-admin" aria-labelledby="dLabel">
-                            <i class="adminicno"></i>
-                            <li data-toggle="modal" data-target="#myModal" id="userManagement" class="navadmin">
-                                <i class="adminName"></i>
-                                用户管理
-                            </li>
+                            <i class="adminicno"></i>                           
                             <li id="about"  class="navadmin">
                                 <i class="adminAbort"></i>
                                 退出账户
@@ -194,165 +189,6 @@
         </div>
     </div>
 </div>
-<!--用户管理-->
-<div class="modal right fade" id="myModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-        <div class="modal-content modal-content-s">
-            <div class="modal-header">
-                <p class="modal-title" id="myModalLabel">用户管理</p>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="line-height: 50px;padding: 8px;">&times;</span></button>
-            </div>
-            <div class="modal-body tableUser">
-               <button class="addName" data-toggle="modal" id="addUser">添加用户</button>
-                <table class="table  table-condensed tableUser">
-                    <thead>
-                    <tr style="background-color: rgba(0, 0, 0, 0.05);">
-                        <th>用户</th>
-                        <th>角色</th>
-                        <th>邮箱</th>
-                        <th>电话</th>
-                        <th>操作</th>
-                    </tr>
-                    </thead>
-                    <tbody id="userList"></tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-<!--添加用户-->
-<div class="modal right fade addModal" id="addUser-s" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-        <div class="modal-content addmodalUser">
-            <div class="modal-header">
-                <p class="modal-title" style="font-size: 14px">添加用户</p>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="line-height: 50px;padding: 8px;">&times;</span></button>
-            </div>
-            <div class="modal-body userForm">
-                    <ul>
-                        <li>
-                            <span>用户名：</span>
-                            <input type="text" style="margin-left: 13px" id="addUserName">
-                        </li>
-                        <li>
-                            <span>电话：</span>
-                            <input type="text" style="margin-left: 27px" id="addPhone">
-                        </li>
-                        <li class="positionR">
-                            <span>邮箱：</span>
-                            <input type="text" style="margin-left: 27px" id="addEmail">
-                        </li>
-                        <li class="positionR" >
-                            <span>密码：</span>
-                            <input type="password" style="margin-left: 27px" id="addPassWord">
-                        </li>
-                        <li class="positionR">
-                            <span>确认密码：</span>
-                            <input type="password" id="replayPassWord">
-                        </li>
-                        <li class="positionR">
-                            <span>权限：</span>
-                            <select name="" id="add-select" multiple="multiple"></select>
-                        </li>
-                    </ul>
-            </div>
-            <div class="modal-footer modify-footer">
-              <p style="margin: auto">
-                  <button type="button" class="btn btn-default" onclick="addUser()">确定</button>
-                  <button type="button" class="btn btn-primary "  data-dismiss="modal" onclick="removeAdd()">取消</button>
-              </p>
-            </div>
-        </div>
-    </div>
-</div>
-<!--修改用户-->
-<div class="modal right fade addModal" id="userMod" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-        <div class="modal-content addmodalUser">
-            <div class="modal-header">
-                <p class="modal-title" style="font-size: 14px">用户修改</p>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="line-height: 50px;padding: 8px;">&times;</span></button>
-            </div>
-            <div class="modal-body userForm">
-                <ul>
-                    <li>
-                        <span>用户名：</span>
-                        <input type="hidden" id="changeId">
-                        <input type="text" readonly="readonly" style="margin-left: 13px;background:#CCCCCC" id="changeUserName">
-                    </li>
-                    <li>
-                        <span>电话：</span>
-                        <input type="text" style="margin-left: 27px" id="changePhone">
-
-                    </li>
-                    <li class="positionR">
-                        <span>邮箱：</span>
-                        <input type="text" style="margin-left: 27px" id="changeEmail">
-                    </li>
-                    <li class="positionR" id="authority">
-                        <span>权限：</span>
-                        <select id="change-select" multiple="multiple"></select>
-                    </li>
-                </ul>
-            </div>
-            <div class="modal-footer modify-footer">
-                <p style="margin: auto">
-                    <button type="button" class="btn btn-default" onclick="changeUser()">修改</button>
-                    <button type="button" class="btn btn-primary "  data-dismiss="modal" onclick="removeChange()">取消</button>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-<input type="hidden" id="hiddenId">
-<!--删除用户-->
-<div class="modal right fade addModal" id="userDelect" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-        <div class="modal-content modal-shanchu">
-            <div class="modal-body modal-bodys">
-                <ul>
-                    <li>
-                        <p class="dropOut"> </p>
-                        <span class="dropspan">确定删除用户吗？</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="modal-footer modify-footer">
-                <button type="button" class="btn btn-primary "  data-dismiss="modal" style="position: relative;left: -28px;">取消</button>
-                <button type="button" class="btn btn-default" style="position: absolute;left: 31px;" data-dismiss="modal" onclick="deleteUser()" id="deleteUser">确定</button>
-            </div>
-        </div>
-        </div>
-    </div>
-<!--修改密码-->
-<div class="modal right fade addModal" id="userPassword" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-        <div class="modal-content passwordUser">
-            <div class="modal-header">
-                <p class="modal-title">修改密码</p>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="line-height: 50px;padding: 8px;">&times;</span></button>
-            </div>
-            <div class="modal-body userForm">
-                <ul>
-                    <li class="positionR" >
-                        <span>密码：</span>
-                        <input type="password" style="margin-left: 27px" id="changePassWord">
-                    </li>
-                    <li class="positionR">
-                        <span>确认密码：</span>
-                        <input type="password" id="reChangePassWord">
-                    </li>
-                </ul>
-            </div>
-            <div class="modal-footer modify-footer">
-                <p style="margin: auto">
-                    <button type="button" class="btn btn-default" onclick="changePassWord()">确定</button>
-                    <button type="button" class="btn btn-primary "  data-dismiss="modal" onclick="removeDelete()">取消</button>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="maincon">
     <iframe id="mainCon" name="mainCon" frameborder="0" style="overflow-y: scroll;width:100%;height:100%;margin-left:0;"></iframe>
@@ -365,10 +201,8 @@
 <script src="Default/public/calendar/moment.js"></script>
 <script src="Default/public/calendar/daterangepicker.js"></script>
 <script src="Default/public/calendar/calendar.js"></script>
-<script src="Default/public/js/publicURL.js"></script>
 <script src="Default/public/js/ZSelect.js"></script>
-<script src="Default/public/js/nav.js"></script>
-<script src="Default/js/user.js"></script>-->
+<script src="Default/public/js/nav.js"></script>-->
 
 <script>
     $(document).ajaxComplete(function(event,xhr){
