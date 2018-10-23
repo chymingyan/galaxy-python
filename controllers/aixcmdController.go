@@ -7,3 +7,7 @@ import (
 type AixCmdController struct {
 	beego.Controller
 }
+
+func (this *AixCmdController) AixCommand() {
+
+}

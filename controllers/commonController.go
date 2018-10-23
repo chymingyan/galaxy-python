@@ -1,9 +1,13 @@
 package controllers
 
-import(
+import (
 	"github.com/astaxie/beego"
 )
 
-type CommonController struct{
+type CommonController struct {
 	beego.Controller
+}
+
+func (this *CommonController) InitLocalDb() {
+
 }

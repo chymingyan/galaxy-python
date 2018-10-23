@@ -18,11 +18,16 @@ func init() {
 	//configController
 	beego.Router("/config", &controllers.ConfigController{}, "get:Config")
 	//oraclecmdController
+	beego.Router("/oraclecmd", &controllers.OracleCmdController{}, "get:OracleCommand")
 	//linuxcmdController
+	beego.Router("/linuxcmd", &controllers.LinuxCmdController{}, "get:LinuxCommand")
 	//aixcmdController
+	beego.Router("/aixcmd", &controllers.AixCmdController{}, "get:AixCommand")
 	//inspectionController
 	beego.Router("/insp", &controllers.InspectionController{}, "get:Insp")
 	//exportContorller
 	beego.Router("/export", &controllers.ExportController{}, "get:Export")
+	//commonController
+	beego.Router("/common/init", &controllers.CommonController{}, "post:InitLocalDb")
 
 }

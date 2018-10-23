@@ -20,3 +20,11 @@ func (this *MainController) Get() {
 	this.Data["Email"] = "chen_haiyan@hotmail.com"
 	this.TplName = "index.tpl"
 }
+
+func (this *MainController) Chat() {
+
+}
+
+func (this *MainController) Tree() {
+
+}

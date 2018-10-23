@@ -7,3 +7,7 @@ import (
 type OracleCmdController struct {
 	beego.Controller
 }
+
+func (this *OracleCmdController) OracleCommand() {
+
+}

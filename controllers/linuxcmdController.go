@@ -7,3 +7,7 @@ import (
 type LinuxCmdController struct {
 	beego.Controller
 }
+
+func (this *LinuxCmdController) LinuxCommand() {
+
+}
