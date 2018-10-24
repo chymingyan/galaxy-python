@@ -28,3 +28,13 @@ func (this *CommonController) AixVersionArray() {
 func (this *CommonController) LinuxVersionArray() {
 
 }
+
+//导入目标分组、主机、数据库信息
+func (this *CommonController) Import() {
+
+}
+
+//导出目标分组、主机、数据库信息
+func (this *CommonController) Export() {
+
+}

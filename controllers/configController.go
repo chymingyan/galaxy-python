@@ -8,6 +8,61 @@ type ConfigController struct {
 	beego.Controller
 }
 
+//获取全部分组信息
+func (this *ConfigController) Groups() {
+
+}
+
+//获取单个分组信息
+func (this *CommonController) Group() {
+
+}
+
+//添加分组信息
+func (this *ConfigController) AddGroup() {
+
+}
+
+//修改分组信息
+func (this *ConfigController) ModifyGroup() {
+
+}
+
+//删除分组信息
+func (this *ConfigController) DelGroup() {
+
+}
+
+//获取全部的目标主机信息
+func (this *ConfigController) TargetHosts() {
+
+}
+
+//获取单个目标主机信息
+func (this *ConfigController) SingleHost() {
+
+}
+
+//添加目标主机信息
+func (this *ConfigController) AddHost() {
+
+}
+
+//修改目标主机信息
+func (this *ConfigController) ModifyHost() {
+
+}
+
+//删除目标主机信息
+func (this *ConfigController) DelHost() {
+
+}
+
+//测试目标主机信息连接
+func (this *ConfigController) TestConnHost() {
+
+}
+
 //获取全部的目标数据库信息
 func (this *ConfigController) TargetDbs() {
 	this.Data["Website"] = "https://github.com/chymingyan"
