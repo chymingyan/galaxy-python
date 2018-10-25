@@ -26,3 +26,37 @@ type OracleCommand struct {
 	//主机系统版本 shell必填项
 	OsVersion string
 }
+
+type OracleCommands struct {
+	XMLName xml.Name `xml:"oracleRules"`
+	Version string   `xml:"version,attr"`
+	Xsd string 'xml:xmlns:xsd,attr'
+	Xsi string 'xml:xmlns:xsi,attr'
+	Server string 'xml:server'
+	//OracleRules []OracleCommand 'xml:oracleRule'
+}
+
+//查询所有Oracle Command命令
+func (this *OracleCommands) Commands() {
+
+}
+
+//查询单条Command信息
+func (this *OracleCommand) Command() {
+
+}
+
+//添加一条Command命令
+func (this *OracleCommand) AddCmd() {
+
+}
+
+//修改一条Command命令
+func (this *OracleCommand) ModifyCmd() {
+
+}
+
+//删除Command命令
+func (this *OracleCommand) DelCmd() {
+
+}
