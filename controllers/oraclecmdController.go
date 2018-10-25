@@ -19,7 +19,7 @@ func (this *OracleCmdController) Command() {
 }
 
 //获取全部Oracle command 信息
-func (this *OracleCmdController) Command() {
+func (this *OracleCmdController) Commands() {
 
 }
 
