@@ -20,10 +20,10 @@ type LinuxCommand struct {
 }
 
 type LinuxCommands struct {
-	XMLName    xml.Name        `xml:"oracleRules"`
-	Version    string          `xml:"version,attr"`
-	Encoding   string          `xml:"encoding,attr"`
-	Xsd        string          `xml:"xmlns:xsd,attr"`
-	Xsi        string          `xml:"xmlns:xsi,attr"`
-	OracleRule []OracleCommand `xml:"oracleRule"`
+	XMLName   xml.Name       `xml:"oracleRules"`
+	Version   string         `xml:"version,attr"`
+	Encoding  string         `xml:"encoding,attr"`
+	Xsd       string         `xml:"xmlns:xsd,attr"`
+	Xsi       string         `xml:"xmlns:xsi,attr"`
+	LinuxRule []LinuxCommand `xml:"oracleRule"`
 }
