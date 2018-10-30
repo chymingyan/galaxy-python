@@ -134,3 +134,53 @@ func LoadAixRules() bool {
 	}
 	return isOk
 }
+
+//添加一条Aix系统巡检命令
+func (this *HostCommands) AddAixCmd(cmd HostCommand) bool {
+	return true
+}
+
+//删除一条Aix系统巡检命令
+func (this *HostCommands) DelAixCmd(cmdId string) bool {
+	return true
+}
+
+//修改一条Aix系统巡检命令
+func (this *HostCommands) ModifyAixCmd(cmd HostCommand) bool {
+	return true
+}
+
+//查询一条Aix系统巡检命令
+func (this *HostCommands) AixCmd(cmdId string) (cmd HostCommand) {
+	return cmd
+}
+
+//查询全部的Aix巡检命令
+func (this *HostCommands) AixCmds() bool {
+	return true
+}
+
+//添加一条Linux系统巡检命令
+func (this *HostCommands) AddLinuxCmd(cmd HostCommand) bool {
+	return true
+}
+
+//删除一条Linux系统巡检命令
+func (this *HostCommands) DelLinuxCmd(cmdId string) bool {
+	return true
+}
+
+//修改一条Linux系统巡检命令
+func (this *HostCommands) ModifyLinuxCmd(cmd HostCommand) bool {
+	return true
+}
+
+//查询一条Linux系统巡检命令
+func (this *HostCommands) LinuxCmd(cmdId string) (cmd HostCommand) {
+	return cmd
+}
+
+//查询全部的Linux巡检命令
+func (this *HostCommands) LinuxCmds() bool {
+	return true
+}
