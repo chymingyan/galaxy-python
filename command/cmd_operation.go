@@ -1,4 +1,4 @@
-package rules
+package command
 
 import (
 	"encoding/xml"
@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 )
+
 
 const dbRulesFileName = "conf/DatabaseRules.xml"
 const aixRulesFileName = "conf/AixRules.xml"
