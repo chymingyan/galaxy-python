@@ -51,7 +51,6 @@ type OracleCommands struct {
 
 //加载OracleCommands命令
 func LoadDataBaseRules() bool {
-	fmt.Println("Database file Name: " + dbRulesFileName)
 	var isOk = true
 	if _, err := os.Stat(dbRulesFileName); os.IsNotExist(err) {
 		isOk = false
@@ -95,29 +94,32 @@ func LoadDataBaseRules() bool {
 	return isOk
 }
 
-//查询所有Oracle Command命令
-func (this *OracleCommands) Commands() (rules []OracleCommand) {
-	rules = DatabaseRules.OracleRule
-	return
-}
-
-//查询单条Command信息
-func (this *OracleCommands) Command(cmdId string) (cmd OracleCommand) {
-	cmd = OracleCommand{}
-	ruleCount := len(DatabaseRules.OracleRule)
-	for i := 0; i < ruleCount; i++ {
-		if DatabaseRules.OracleRule[i].OracleCmdId == cmdId {
-			cmd = DatabaseRules.OracleRule[i]
-			break
-		}
-	}
-	return
-}
-
 //添加一条Command命令
 func (this *OracleCommands) AddCmd(cmd OracleCommand) bool {
 	var isOk = true
 	DatabaseRules.OracleRule = append(DatabaseRules.OracleRule, cmd)
+	output, err := xml.MarshalIndent(DatabaseRules, "  ", "  ")
+	if err != nil {
+		isOk = false
+	}
+	err = ioutil.WriteFile(dbRulesFileName, output, 0666) //写入文件(字节数组)
+	if err != nil {
+		isOk = false
+	}
+	return isOk
+}
+
+//删除Command命令
+func (this *OracleCommands) DelCmd(cmdId string) bool {
+	var isOk = true
+	tempRules := []OracleCommand{}
+	ruleCount := len(DatabaseRules.OracleRule)
+	for i := 0; i < ruleCount; i++ {
+		if DatabaseRules.OracleRule[i].OracleCmdId != cmdId {
+			tempRules = append(tempRules, DatabaseRules.OracleRule[i])
+		}
+	}
+	DatabaseRules.OracleRule = tempRules
 	output, err := xml.MarshalIndent(DatabaseRules, "  ", "  ")
 	if err != nil {
 		isOk = false
@@ -152,24 +154,21 @@ func (this *OracleCommands) ModifyCmd(cmd OracleCommand) bool {
 	return isOk
 }
 
-//删除Command命令
-func (this *OracleCommands) DelCmd(cmdId string) bool {
-	var isOk = true
-	tempRules := []OracleCommand{}
+//查询单条Command信息
+func (this *OracleCommands) Command(cmdId string) (cmd OracleCommand) {
+	cmd = OracleCommand{}
 	ruleCount := len(DatabaseRules.OracleRule)
 	for i := 0; i < ruleCount; i++ {
-		if DatabaseRules.OracleRule[i].OracleCmdId != cmdId {
-			tempRules = append(tempRules, DatabaseRules.OracleRule[i])
+		if DatabaseRules.OracleRule[i].OracleCmdId == cmdId {
+			cmd = DatabaseRules.OracleRule[i]
+			break
 		}
 	}
-	DatabaseRules.OracleRule = tempRules
-	output, err := xml.MarshalIndent(DatabaseRules, "  ", "  ")
-	if err != nil {
-		isOk = false
-	}
-	err = ioutil.WriteFile(dbRulesFileName, output, 0666) //写入文件(字节数组)
-	if err != nil {
-		isOk = false
-	}
-	return isOk
+	return
+}
+
+//查询所有Oracle Command命令
+func (this *OracleCommands) Commands() (rules []OracleCommand) {
+	rules = DatabaseRules.OracleRule
+	return
 }
