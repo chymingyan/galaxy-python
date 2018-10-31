@@ -1,6 +1,8 @@
 package target
 
 type TargetGroup struct {
+	GroupId   string
+	GroupName string
 }
 
 type TargetGroups struct {

@@ -38,6 +38,8 @@ type OracleCommand struct {
 	HostType string `xml:"hostType"`
 	//主机系统版本 shell必填项
 	OsVersion string `xml:"osVersion"`
+	//备注
+	Remark string
 }
 
 type OracleCommands struct {
