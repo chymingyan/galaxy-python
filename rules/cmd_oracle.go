@@ -72,7 +72,6 @@ func LoadDataBaseRules() bool {
 		if err != nil {
 			isOk = false
 		}
-		fmt.Printf("DataBaseRules %s", DatabaseRules.Encoding)
 
 	} else {
 		//不存在需要创建文件

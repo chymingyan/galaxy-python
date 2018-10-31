@@ -18,7 +18,7 @@ type DbHosts struct {
 }
 
 //加载数据库和主机关联信息
-func LoadDbHost() {
+func LoadDbHost() bool {
 	var isOk = true
 	if _, err := os.Stat(dbHostsFileName); os.IsNotExist(err) {
 		isOk = false

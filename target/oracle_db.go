@@ -1,6 +1,6 @@
 package target
 
-const OracleDbsFileName = "conf/OracleDatabases.xml"
+const oracleDbsFileName = "conf/OracleDatabases.xml"
 
 var OracleDbList OracleDbs
 
