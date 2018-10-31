@@ -137,50 +137,160 @@ func LoadAixRules() bool {
 
 //添加一条Aix系统巡检命令
 func (this *HostCommands) AddAixCmd(cmd HostCommand) bool {
-	return true
+	var isOk = true
+	AixHostRules.HostRule = append(AixHostRules.HostRule, cmd)
+	output, err := xml.MarshalIndent(AixHostRules, "  ", "  ")
+	if err != nil {
+		isOk = false
+	}
+	err = ioutil.WriteFile(aixRulesFileName, output, 0666) //写入文件(字节数组)
+	if err != nil {
+		isOk = false
+	}
+
+	return isOk
 }
 
 //删除一条Aix系统巡检命令
 func (this *HostCommands) DelAixCmd(cmdId string) bool {
-	return true
+	var isOk = true
+	tempRules := []HostCommand{}
+	ruleCount := len(AixHostRules.HostRule)
+	for i := 0; i < ruleCount; i++ {
+		if AixHostRules.HostRule[i].CommandId != cmdId {
+			tempRules = append(tempRules, AixHostRules.HostRule[i])
+		}
+	}
+	AixHostRules.HostRule = tempRules
+	output, err := xml.MarshalIndent(AixHostRules, "  ", "  ")
+	if err != nil {
+		isOk = false
+	}
+	err = ioutil.WriteFile(aixRulesFileName, output, 0666) //写入文件(字节数组)
+	if err != nil {
+		isOk = false
+	}
+	return isOk
 }
 
 //修改一条Aix系统巡检命令
 func (this *HostCommands) ModifyAixCmd(cmd HostCommand) bool {
-	return true
+	var isOk = true
+	tempRules := []HostCommand{}
+	ruleCount := len(AixHostRules.HostRule)
+	for i := 0; i < ruleCount; i++ {
+		if AixHostRules.HostRule[i].CommandId != cmd.CommandId {
+			tempRules = append(tempRules, AixHostRules.HostRule[i])
+		}
+	}
+	tempRules = append(tempRules, cmd)
+	AixHostRules.HostRule = tempRules
+	output, err := xml.MarshalIndent(AixHostRules, "  ", "  ")
+	if err != nil {
+		isOk = false
+	}
+	err = ioutil.WriteFile(aixRulesFileName, output, 0666) //写入文件(字节数组)
+	if err != nil {
+		isOk = false
+	}
+	return isOk
 }
 
 //查询一条Aix系统巡检命令
 func (this *HostCommands) AixCmd(cmdId string) (cmd HostCommand) {
-	return cmd
+	cmd = HostCommand{}
+	ruleCount := len(AixHostRules.HostRule)
+	for i := 0; i < ruleCount; i++ {
+		if AixHostRules.HostRule[i].CommandId == cmdId {
+			cmd = AixHostRules.HostRule[i]
+			break
+		}
+	}
+	return
 }
 
 //查询全部的Aix巡检命令
-func (this *HostCommands) AixCmds() bool {
-	return true
+func (this *HostCommands) AixCmds() (rules []HostCommand) {
+	rules = AixHostRules.HostRule
+	return
 }
 
 //添加一条Linux系统巡检命令
 func (this *HostCommands) AddLinuxCmd(cmd HostCommand) bool {
-	return true
+	var isOk = true
+	LinuxHostRules.HostRule = append(LinuxHostRules.HostRule, cmd)
+	output, err := xml.MarshalIndent(LinuxHostRules, "  ", "  ")
+	if err != nil {
+		isOk = false
+	}
+	err = ioutil.WriteFile(linuxRulesFileName, output, 0666) //写入文件(字节数组)
+	if err != nil {
+		isOk = false
+	}
+
+	return isOk
 }
 
 //删除一条Linux系统巡检命令
 func (this *HostCommands) DelLinuxCmd(cmdId string) bool {
-	return true
+	var isOk = true
+	tempRules := []HostCommand{}
+	ruleCount := len(LinuxHostRules.HostRule)
+	for i := 0; i < ruleCount; i++ {
+		if LinuxHostRules.HostRule[i].CommandId != cmdId {
+			tempRules = append(tempRules, LinuxHostRules.HostRule[i])
+		}
+	}
+	LinuxHostRules.HostRule = tempRules
+	output, err := xml.MarshalIndent(LinuxHostRules, "  ", "  ")
+	if err != nil {
+		isOk = false
+	}
+	err = ioutil.WriteFile(linuxRulesFileName, output, 0666) //写入文件(字节数组)
+	if err != nil {
+		isOk = false
+	}
+	return isOk
 }
 
 //修改一条Linux系统巡检命令
 func (this *HostCommands) ModifyLinuxCmd(cmd HostCommand) bool {
-	return true
+	var isOk = true
+	tempRules := []HostCommand{}
+	ruleCount := len(LinuxHostRules.HostRule)
+	for i := 0; i < ruleCount; i++ {
+		if LinuxHostRules.HostRule[i].CommandId != cmd.CommandId {
+			tempRules = append(tempRules, LinuxHostRules.HostRule[i])
+		}
+	}
+	tempRules = append(tempRules, cmd)
+	LinuxHostRules.HostRule = tempRules
+	output, err := xml.MarshalIndent(LinuxHostRules, "  ", "  ")
+	if err != nil {
+		isOk = false
+	}
+	err = ioutil.WriteFile(linuxRulesFileName, output, 0666) //写入文件(字节数组)
+	if err != nil {
+		isOk = false
+	}
+	return isOk
 }
 
 //查询一条Linux系统巡检命令
 func (this *HostCommands) LinuxCmd(cmdId string) (cmd HostCommand) {
-	return cmd
+	cmd = HostCommand{}
+	ruleCount := len(LinuxHostRules.HostRule)
+	for i := 0; i < ruleCount; i++ {
+		if LinuxHostRules.HostRule[i].CommandId == cmdId {
+			cmd = LinuxHostRules.HostRule[i]
+			break
+		}
+	}
+	return
 }
 
 //查询全部的Linux巡检命令
-func (this *HostCommands) LinuxCmds() bool {
-	return true
+func (this *HostCommands) LinuxCmds() (rules []HostCommand) {
+	rules = LinuxHostRules.HostRule
+	return
 }

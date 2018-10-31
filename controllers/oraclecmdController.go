@@ -35,8 +35,7 @@ func (this *OracleCmdController) Commands() {
 
 //添加一条Oracle command 信息
 func (this *OracleCmdController) Add() {
-	isAdd = true
-
+	isAdd := true
 	//	获取Post传递的登陆信息
 	ruleName := this.GetString("ruleName")
 	ruleText := this.GetString("ruleText")
