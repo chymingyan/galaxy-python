@@ -1,5 +1,9 @@
 package target
 
+const GroupsFileName = "Groups.xml"
+
+var GroupList TargetGroups
+
 type TargetGroup struct {
 	GroupId   string
 	GroupName string

@@ -126,7 +126,6 @@ func (this *OracleCommands) AddCmd(cmd OracleCommand) bool {
 	if err != nil {
 		isOk = false
 	}
-
 	return isOk
 }
 
@@ -155,7 +154,6 @@ func (this *OracleCommands) ModifyCmd(cmd OracleCommand) bool {
 
 //删除Command命令
 func (this *OracleCommands) DelCmd(cmdId string) bool {
-
 	var isOk = true
 	tempRules := []OracleCommand{}
 	ruleCount := len(DatabaseRules.OracleRule)

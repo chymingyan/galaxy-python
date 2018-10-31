@@ -1,6 +1,10 @@
 package target
 
-type TargetDb struct {
+const OracleDbsFileName = "conf/OracleDatabases.xml"
+
+var OracleDbList OracleDbs
+
+type OracleDb struct {
 	DbId       string
 	DbIp       string
 	DbPort     string
@@ -14,7 +18,7 @@ type TargetDb struct {
 	Remark     string
 }
 
-type TargetDbs struct {
+type OracleDbs struct {
 	XMLName  xml.Name   `xml:"databases"`
 	Version  string     `xml:"version,attr"`
 	Encoding string     `xml:"encoding,attr"`

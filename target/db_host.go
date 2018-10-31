@@ -1,5 +1,9 @@
 package target
 
+const DbHostsFileName = "conf/DbHosts.xml"
+
+var DbHostList DbHosts
+
 type DbHost struct {
 	DbHostId string
 	DbId     string
