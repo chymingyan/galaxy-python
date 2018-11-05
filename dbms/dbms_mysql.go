@@ -1,5 +1,0 @@
-package dbms
-
-func init() {
-
-}
