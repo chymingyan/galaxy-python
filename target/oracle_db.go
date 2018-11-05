@@ -147,3 +147,4 @@ func (this *OracleDbs) QueryDbs() (dbs []OracleDb) {
 	dbs = OracleDbList.Database
 	return
 }
+
