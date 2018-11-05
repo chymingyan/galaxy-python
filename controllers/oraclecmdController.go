@@ -85,6 +85,6 @@ func (this *OracleCmdController) Modify() {
 }
 
 //删除一条Oracle command信息
-func (this *OracleCmdController) del() {
+func (this *OracleCmdController) Del() {
 
 }

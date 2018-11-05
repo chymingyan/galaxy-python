@@ -14,7 +14,7 @@ func (this *ConfigController) Groups() {
 }
 
 //获取单个分组信息
-func (this *CommonController) Group() {
+func (this *ConfigController) Group() {
 
 }
 

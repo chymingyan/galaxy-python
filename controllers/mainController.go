@@ -14,7 +14,7 @@ func (this *MainController) Get() {
 	if hostIp == nil {
 		this.Redirect("/signin", 302)
 	}
-
+      
 	this.Data["Test"] = "主界面"
 	this.Data["Website"] = "https://github.com/chymingyan"
 	this.Data["Email"] = "chen_haiyan@hotmail.com"
