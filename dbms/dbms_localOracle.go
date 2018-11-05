@@ -14,4 +14,15 @@ func SingIn(ip, port, sid, username, pwd string) bool {
 
 	//写入本地字符串
 	LocalDatabaseStr = username + "/" + pwd + "@" + ip + ":" + port + "/" + sid
+	return true
+}
+
+//保存数据库巡检结果
+func SaveDbInspData() {
+
+}
+
+//保存主机巡检结果
+func SaveHostInspData() {
+
 }

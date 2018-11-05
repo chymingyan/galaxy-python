@@ -58,9 +58,10 @@ func init() {
 	beego.Router("/aixcmd/command", &controllers.AixCmdController{}, "*:AixCommand")
 	beego.Router("/aixcmd/add", &controllers.AixCmdController{}, "*:AddCommand")
 	beego.Router("/aixcmd/modify", &controllers.AixCmdController{}, "*:ModifyCommand")
-	beego.Router("aixcmd/del", &controllers.AixCmdController{}, "*:DelCommand")
+	beego.Router("/aixcmd/del", &controllers.AixCmdController{}, "*:DelCommand")
 	//inspectionController
 	beego.Router("/insp", &controllers.InspectionController{}, "get:Insp")
+	beego.Router("/insp/showhost", &controllers.InspectionController{}, "get:ShowHostByDbId")
 	//exportContorller
 	beego.Router("/export", &controllers.ExportController{}, "get:Export")
 	//commonController

@@ -14,3 +14,8 @@ func (this *InspectionController) Insp() {
 	this.Data["Index"] = "巡检页面"
 	this.TplName = "index.tpl"
 }
+
+//根据数据库ID获取对应的主机信息
+func (this *InspectionController) ShowHostByDbId() {
+
+}
