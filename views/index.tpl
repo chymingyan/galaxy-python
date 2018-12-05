@@ -22,51 +22,51 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav one" id="exampleAccordion">
-            <li class="nav-item nav-munu" id="menu">
-                <a class="nav-link" id="sidenavToggler" >
+            <li class="nav-item nav-munu" id="menu" title="最新概览">
+                <a class="nav-link" id="sidenavToggler" href="#" >
                     <i class="fa-fw fa-mun"></i>
-                    <span class="nav-link-text" >最新概览</span>
+            <!--        <span class="nav-link-text" >最新概览</span>-->
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" id="overview" title="概览" style="position:relative;">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" id="overview" title="常规巡检" style="position:relative;">
                 <a class="nav-link" href="overview.html" target="mainCon" >
                     <i class="fa-fw fa-dashboards"></i>
-                    <span class="nav-link-text nav_text select">常规巡检</span>
+                    <!--<span class="nav-link-text nav_text select">常规巡检</span>-->
                     <span class="nav-red"></span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" id="performance" title="性能&故障" style="position:relative;" >
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" id="performance" title="虚拟化巡检" style="position:relative;" >
                 <a class="nav-link" href="performance.html" target="mainCon" >
                     <i class="fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text nav_text">虚拟化巡检</span>
+              <!--      <span class="nav-link-text nav_text">虚拟化巡检</span>-->
                     <span class="nav-red" style="display: none;"></span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" id="operate" title="运营决策" style="position:relative;">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" id="operate" title="导出报告" style="position:relative;">
                 <a class="nav-link" href="operate.html" style="position:relative;" target="mainCon"  >
                     <i class="fa-fw fa-table"></i>
-                    <span class="nav-link-text nav_text">导出报告</span>
+                    <!--<span class="nav-link-text nav_text">导出报告</span>-->
                     <span class="nav-red" style="display: none;"></span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right"  id= "dataBase" title="数据库" style="position:relative;">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right"  id= "dataBase" title="虚拟化报告" style="position:relative;">
                 <a class="nav-link" href="database.html" style="position:relative;" target="mainCon"  >
                     <i class="fa-fw fa-data"></i>
-                    <span class="nav-link-text nav_text">虚拟化报告</span>
+           <!--         <span class="nav-link-text nav_text">虚拟化报告</span>-->
                     <span class="nav-red" style="display: none;"></span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right"  id= "report" title="报表" style="position:relative;">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right"  id= "report" title="巡检配置" style="position:relative;">
                 <a class="nav-link" href="report.html" style="position:relative;" target="mainCon"  >
                     <i class="fa-fw fa-report"></i>
-                    <span class="nav-link-text nav_text">巡检配置</span>
+                 <!--   <span class="nav-link-text nav_text">巡检配置</span>-->
                     <span class="nav-red" style="display: none;"></span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" id="config" title="设置" style="position:relative;">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" id="config" title="规则配置" style="position:relative;">
                 <a class="nav-link" href="set.html" style="position:relative;" target="mainCon"  >
                     <i class="fa-fw fa-wrench"></i>
-                    <span class="nav-link-text nav_text">规则配置</span>
+                 <!--   <span class="nav-link-text nav_text">规则配置</span>-->
                     <span class="nav-red" style="display: none;"></span>
                 </a>
             </li>
@@ -191,9 +191,10 @@
 </div>
 
 <div class="maincon">
-    <iframe id="mainCon" name="mainCon" frameborder="0" style="overflow-y: scroll;width:100%;height:100%;margin-left:0;">
+sdfjsdkljfsdkfklsdlfk
+   <!-- <iframe id="mainCon" name="mainCon" frameborder="0" style="overflow-y: scroll;width:100%;height:100%;margin-left:0;">
 	{{template "/insp.tpl" .}}
-    </iframe>
+    </iframe>-->
 </div>
 
 <script src="Default/public/js/jquery.min.js"></script>

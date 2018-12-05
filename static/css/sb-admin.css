@@ -118,7 +118,7 @@ body.fixed-nav {
       flex-direction: column;
       margin-top: 56px; }
       #mainNav .navbar-collapse .navbar-sidenav > .nav-item {
-        width: 250px;
+        width: 50px;
         padding: 0;
       border-bottom: 1px solid #1f2e3d;}
         #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
