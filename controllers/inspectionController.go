@@ -9,10 +9,18 @@ type InspectionController struct {
 }
 
 func (this *InspectionController) Insp() {
-	this.Data["Website"] = "https://github.com/chymingyan"
-	this.Data["Email"] = "chen_haiyan@hotmail.com"
-	this.Data["Index"] = "巡检页面"
-	this.TplName = "index.tpl"
+	this.Layout = "ipp_layout.tpl"
+	this.TplName = "main.tpl"
+	this.LayoutSections = make(map[string]string)
+	this.LayoutSections["Head"] = "ipp_head.tpl"
+	this.LayoutSections["Menu"] = "ipp_menu.tpl"
+	this.LayoutSections["Scripts"] = "ipp_scripts.tpl"
+	this.LayoutSections["Content"] = "ipp_insp.tpl"
+	result := struct {
+		Val string
+	}{"success"}
+	this.Data["json"] = &result
+	this.ServeJSON() //响应前端
 }
 
 //根据数据库ID获取对应的主机信息
