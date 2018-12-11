@@ -17,11 +17,7 @@
 </div>
  
 <div id="content" style="background-color:#EEEEEE;min-height:550px;width:1297px;float:right;">
-{{.Content}}</div>
- 
-<!--<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
-版权 © runoob.com</div>-->
- 
+{{.Content}}</div> 
 </div>
  {{.Scripts}}
 </body>
