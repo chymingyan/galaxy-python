@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"ipp/rules"
+	"ipp/models/rules"
 
 	"github.com/astaxie/beego"
 	tsgutils "github.com/timespacegroup/go-utils"
