@@ -16,11 +16,6 @@ func (this *InspectionController) Insp() {
 	this.LayoutSections["Menu"] = "ipp_menu.tpl"
 	this.LayoutSections["Scripts"] = "ipp_scripts.tpl"
 	this.LayoutSections["Content"] = "ipp_insp.tpl"
-	result := struct {
-		Val string
-	}{"success"}
-	this.Data["json"] = &result
-	this.ServeJSON() //响应前端
 }
 
 //根据数据库ID获取对应的主机信息

@@ -16,9 +16,10 @@ func init() {
 	//mainController
 	beego.Router("/", &controllers.MainController{})
 	beego.Router("/chat", &controllers.MainController{}, "post:Chat")
-	beego.Router("/tree", &controllers.MainController{}, "post:Tree")
+	beego.Router("/tree", &controllers.MainController{}, "get:Tree")
 
 	//configController
+	beego.Router("/config", &controllers.ConfigController{}, "*:Config")
 	beego.Router("/config/groups", &controllers.ConfigController{}, "*:Groups")
 	beego.Router("/config/group", &controllers.ConfigController{}, "*:Group")
 	beego.Router("/config/addgroup", &controllers.ConfigController{}, "*:AddGroup")
@@ -38,6 +39,7 @@ func init() {
 	beego.Router("/config/testconndb", &controllers.ConfigController{}, "*:TestConnDb")
 
 	//oraclecmdController
+	beego.Router("/oradb", &controllers.OracleCmdController{}, "*:OraDb")
 	beego.Router("/oraclecmd/cmdindex", &controllers.OracleCmdController{}, "get:OracleCmdIndex")
 	beego.Router("/oraclecmd/commands", &controllers.OracleCmdController{}, "*:Commands")
 	beego.Router("/oraclecmd/command", &controllers.OracleCmdController{}, "*:Command")
@@ -60,7 +62,7 @@ func init() {
 	beego.Router("/aixcmd/modify", &controllers.AixCmdController{}, "*:ModifyCommand")
 	beego.Router("/aixcmd/del", &controllers.AixCmdController{}, "*:DelCommand")
 	//inspectionController
-	beego.Router("/insp", &controllers.InspectionController{}, "post:Insp")
+	beego.Router("/insp", &controllers.InspectionController{}, "*:Insp")
 	beego.Router("/insp/showhost", &controllers.InspectionController{}, "get:ShowHostByDbId")
 	//exportContorller
 	beego.Router("/export", &controllers.ExportController{}, "get:Export")
@@ -70,5 +72,5 @@ func init() {
 	beego.Router("/common/aixversionarray", &controllers.CommonController{}, "*:AixVersionArray")
 	beego.Router("/common/linuxversionarray", &controllers.CommonController{}, "*:LinuxVersionArray")
 	beego.Router("/common/import", &controllers.CommonController{}, "*:Import")
-	beego.Router("common/export", &controllers.CommonController{}, "*:Export")
+	beego.Router("/common/export", &controllers.CommonController{}, "*:Export")
 }

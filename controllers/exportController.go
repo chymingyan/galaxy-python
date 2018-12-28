@@ -9,8 +9,11 @@ type ExportController struct {
 }
 
 func (this *ExportController) Export() {
-	this.Data["Website"] = "https://github.com/chymingyan"
-	this.Data["Email"] = "chen_haiyan@hotmail.com"
-	this.Data["Index"] = "报表页面"
-	this.TplName = "index.tpl"
+	this.Layout = "ipp_layout.tpl"
+	this.TplName = "main.tpl"
+	this.LayoutSections = make(map[string]string)
+	this.LayoutSections["Head"] = "ipp_head.tpl"
+	this.LayoutSections["Menu"] = "ipp_menu.tpl"
+	this.LayoutSections["Scripts"] = "ipp_scripts.tpl"
+	this.LayoutSections["Content"] = "ipp_export.tpl"
 }

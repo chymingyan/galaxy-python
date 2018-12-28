@@ -8,6 +8,17 @@ type ConfigController struct {
 	beego.Controller
 }
 
+//初始化Config配置页面
+func (this *ConfigController) Config() {
+	this.Layout = "ipp_layout.tpl"
+	this.TplName = "main.tpl"
+	this.LayoutSections = make(map[string]string)
+	this.LayoutSections["Head"] = "ipp_head.tpl"
+	this.LayoutSections["Menu"] = "ipp_menu.tpl"
+	this.LayoutSections["Scripts"] = "ipp_scripts.tpl"
+	this.LayoutSections["Content"] = "ipp_config.tpl"
+}
+
 //获取全部分组信息
 func (this *ConfigController) Groups() {
 

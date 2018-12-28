@@ -8,11 +8,11 @@
  
 <div id="container">
  
-<div id="header" style="background-color:#FFA500; height:50px;">
+<div id="header" style="background-color:#00001a;color:#ffffff; height:50px;">
 {{.Head}}
 </div>
  
-<div id="menu" style="background-color:#FFD700;width:50px;float:left;min-height:550px">
+<div id="menu" style="background-color:#00001a;color:#ffffff;width:50px;float:left;min-height:550px">
 {{.Menu}}
 </div>
  
