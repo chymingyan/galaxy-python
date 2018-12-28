@@ -192,9 +192,7 @@
 
 <div class="maincon">
 sdfjsdkljfsdkfklsdlfk
-   <!-- <iframe id="mainCon" name="mainCon" frameborder="0" style="overflow-y: scroll;width:100%;height:100%;margin-left:0;">
-	{{template "/insp.tpl" .}}
-    </iframe>-->
+  
 </div>
 
 <script src="Default/public/js/jquery.min.js"></script>
