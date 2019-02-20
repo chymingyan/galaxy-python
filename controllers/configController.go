@@ -14,7 +14,7 @@ func (this *ConfigController) Config() {
 	this.TplName = "main.tpl"
 	this.LayoutSections = make(map[string]string)
 	this.LayoutSections["Head"] = "ipp_head.tpl"
-	this.LayoutSections["Menu"] = "ipp_menu.tpl"
+	this.LayoutSections["TreeView"] = "ipp_treeview.tpl"
 	this.LayoutSections["Scripts"] = "ipp_scripts.tpl"
 	this.LayoutSections["Content"] = "ipp_config.tpl"
 }

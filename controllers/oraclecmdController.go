@@ -16,9 +16,9 @@ func (this *OracleCmdController) OraDb() {
 	this.TplName = "main.tpl"
 	this.LayoutSections = make(map[string]string)
 	this.LayoutSections["Head"] = "ipp_head.tpl"
-	this.LayoutSections["Menu"] = "ipp_menu.tpl"
+	this.LayoutSections["TreeView"] = "ipp_treeview.tpl"
 	this.LayoutSections["Scripts"] = "ipp_scripts.tpl"
-	this.LayoutSections["Content"] = "oracle_rule.tpl"
+	this.LayoutSections["Content"] = "ipp_oracle_rule.tpl"
 }
 
 //Oracle数据库命令首页

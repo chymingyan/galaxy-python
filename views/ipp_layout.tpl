@@ -12,6 +12,8 @@
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
 	<!--bootstrap treeview-->
 	<link href="static/css/bootstrap-treeview.min.css" rel="stylesheet">
+	  <!-- Custom styles for this template -->
+    <link href="static/css/dashboard.css" rel="stylesheet">
 
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
     <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
@@ -20,22 +22,15 @@
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
   </head>
-<body style=" margin:0; padding:0">
- 
-<div id="container">
- 
-<div id="header" style="background-color:#00001a;color:#ffffff; height:50px;">
+<body style="margin:0;">
 {{.Head}}
-</div>
- 
-<div id="menu" style="background-color:#00001a;color:#ffffff;width:200px;float:left;min-height:550px">
-{{.Menu}}
-</div>
- 
-<div id="content" style="background-color:#EEEEEE;min-height:550px;width:1297px;float:right;">
-{{.Content}}</div> 
-</div>
- {{.Scripts}}
+ <div class="container-fluid">
+      <div class="row">
+	{{.TreeView}}
+	{{.Content}}
+	</div>
+	</div>
+{{.Scripts}}
 </body>
 </html>
 
