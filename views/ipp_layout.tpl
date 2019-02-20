@@ -10,6 +10,8 @@
 
     <!-- Bootstrap -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
+	<!--bootstrap treeview-->
+	<link href="static/css/bootstrap-treeview.min.css" rel="stylesheet">
 
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
     <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
@@ -26,7 +28,7 @@
 {{.Head}}
 </div>
  
-<div id="menu" style="background-color:#00001a;color:#ffffff;width:50px;float:left;min-height:550px">
+<div id="menu" style="background-color:#00001a;color:#ffffff;width:200px;float:left;min-height:550px">
 {{.Menu}}
 </div>
  
