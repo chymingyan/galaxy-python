@@ -76,10 +76,13 @@ func (this *ConfigController) TestConnHost() {
 
 //获取全部的目标数据库信息
 func (this *ConfigController) TargetDbs() {
-	this.Data["Website"] = "https://github.com/chymingyan"
-	this.Data["Email"] = "chen_haiyan@hotmail.com"
-	this.Data["Index"] = "配置页面"
-	this.TplName = "index.tpl"
+	this.Layout = "ipp_layout.tpl"
+	this.TplName = "main.tpl"
+	this.LayoutSections = make(map[string]string)
+	this.LayoutSections["Head"] = "ipp_head.tpl"
+	this.LayoutSections["TreeView"] = "ipp_treeview.tpl"
+	this.LayoutSections["Scripts"] = "ipp_scripts.tpl"
+	this.LayoutSections["Content"] = "ipp_config_db.tpl"
 }
 
 //获取单个的目标数据库信息

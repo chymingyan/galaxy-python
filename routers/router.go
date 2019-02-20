@@ -31,7 +31,7 @@ func init() {
 	beego.Router("/config/modifyhost", &controllers.ConfigController{}, "post:ModifyHost")
 	beego.Router("/config/delhost", &controllers.ConfigController{}, "*:DelHost")
 	beego.Router("/config/testconnhost", &controllers.ConfigController{}, "*:TestConnHost")
-	beego.Router("/config/targetdbs", &controllers.ConfigController{}, "get:TargetDbs")
+	beego.Router("/targetdbs", &controllers.ConfigController{}, "*:TargetDbs")
 	beego.Router("/config/singledb", &controllers.ConfigController{}, "post:SingleDb")
 	beego.Router("/config/adddb", &controllers.ConfigController{}, "post:AddDb")
 	beego.Router("/config/modifydb", &controllers.ConfigController{}, "post:ModifyDb")

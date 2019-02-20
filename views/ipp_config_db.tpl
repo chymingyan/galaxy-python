@@ -1,35 +1,35 @@
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
  <h1 class="page-header">主机数据库配置</h1>
 <ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="/config">主机系统配置</a></li>
-  <li role="presentation"><a href="/targetdbs">数据库配置</a></li>
+  <li role="presentation" ><a href="/config">主机系统配置</a></li>
+  <li role="presentation" class="active"><a href="/targetdbs">数据库配置</a></li>
 </ul>
 
-<!--表格-->
+
 <div class="panel panel-default">
   <!-- Default panel head -->
   <div class="panel-heading">Panel heading</div>
 <!-- Default panel head -->
 <div class="panel-body">
    <form class="navbar-form navbar-right">
-<!--主机编号-->
+<!--数据库编号-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">主机编号:</span>
+  <span class="input-group-addon" id="basic-addon1">数据库编号:</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
-<!--主机物理IP-->
+<!--数据库IP-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">主机物理IP:</span>
+  <span class="input-group-addon" id="basic-addon1">数据库IP:</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
-<!--主机端口-->
+<!--数据库端口-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">主机端口:</span>
+  <span class="input-group-addon" id="basic-addon1">数据库端口:</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
-<!--数据库软件用户名-->
+<!--数据库用户名-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库软件用户名:</span>
+  <span class="input-group-addon" id="basic-addon1">数据库用户名:</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
 <!--数据库用户密码-->
@@ -37,42 +37,40 @@
   <span class="input-group-addon" id="basic-addon1">数据库用户密码:</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
-<!--集群软件用户名-->
+<!--服务名称-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">集群软件用户名:</span>
+  <span class="input-group-addon" id="basic-addon1">服务名称:</span>
   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
-<!--集群软件用户密码-->
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">集群软件用户密码:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+<!--自定义分组-->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     自定义分组 <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">ORACLE 9I</a></li>
+    <li><a href="#">ORACLE 10G</a></li>
+    <li><a href="#">ORACLE 11G</a></li>
+    <li><a href="#">ORACLE 12C</a></li>
+	<li><a href="#">ORACLE 18C</a></li>
+  </ul>
 </div>
-<!--ROOT用户密码-->
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">ROOT用户密码:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>
-<!--数据库软件目录-->
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库软件目录:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>
-<!--集群软件目录-->
-<div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">集群软件目录:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-</div>
-<!--主机协议-->
-主机协议:
+<!--弹框添加分组-->
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button>
+<!--逻辑备份-->
+逻辑备份:
 <div class="btn-group" role="group" >
-  <button type="button" class="btn btn-default">SSH</button>
+  <button type="button" class="btn btn-default">YES</button>
+  <button type="button" class="btn btn-default">NO</button>
 </div>
-<!--主机系统-->
-主机系统:
-<div class="btn-group" role="group" >
-  <button type="button" class="btn btn-default">LINUX</button>
-  <button type="button" class="btn btn-default">AIX</button>
+<!--EXP备份路径-->
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">EXP备份路径:</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
 </div>
+
 <!--Oracle数据库版本-->
 <div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,12 +84,17 @@
 	<li><a href="#">ORACLE 18C</a></li>
   </ul>
 </div>
+<!--选择目标主机-->
+选择目标主机:
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-hdd" aria-hidden="true"></span>
+</button>
 <a class="btn btn-primary" href="#" role="button">测试链接</a>
 <a class="btn btn-primary" href="#" role="button">保存主机</a>
 <a class="btn btn-primary" href="#" role="button">清空</a>
 </form>
   </div>
-  <!-- Table -->
+  <!--表格-->
    <div class="table-responsive">
             <table class="table table-striped">
               <thead>
