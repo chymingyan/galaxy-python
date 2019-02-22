@@ -75,9 +75,10 @@
 </div>
 <!--Oracle数据库版本-->
 <div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-     Oracle数据库版本 <span class="caret"></span>
-  </button>
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownOracleVersion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    数据库版本
+    <span class="caret"></span>
+	</button>
   <ul class="dropdown-menu">
     <li><a href="#">ORACLE 9I</a></li>
     <li><a href="#">ORACLE 10G</a></li>
@@ -96,11 +97,16 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
+                  <th>编号</th>
+                  <th>主机地址</th>
+                  <th>SSH端口</th>
+                  <th>Oracle用户</th>
+				  <th>Grid用户</th>
+                  <th>Oracle版本</th>
+				<th>ORACLE_HOME</th>
+				<th>GRID_HOME</th>
+				<th>系统版本</th>
+				<th>操作</th>
                 </tr>
               </thead>
               <tbody>
@@ -110,6 +116,16 @@
                   <td>ipsum</td>
                   <td>dolor</td>
                   <td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td><button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+</button>
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+</button></td>
                 </tr>
                 <tr>
                   <td>1,002</td>
@@ -117,6 +133,10 @@
                   <td>consectetur</td>
                   <td>adipiscing</td>
                   <td>elit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,003</td>
@@ -124,6 +144,10 @@
                   <td>nec</td>
                   <td>odio</td>
                   <td>Praesent</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,003</td>
@@ -131,6 +155,10 @@
                   <td>Sed</td>
                   <td>cursus</td>
                   <td>ante</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,004</td>
@@ -138,6 +166,10 @@
                   <td>diam</td>
                   <td>Sed</td>
                   <td>nisi</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,005</td>
@@ -145,6 +177,10 @@
                   <td>quis</td>
                   <td>sem</td>
                   <td>at</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,006</td>
@@ -152,6 +188,10 @@
                   <td>elementum</td>
                   <td>imperdiet</td>
                   <td>Duis</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,007</td>
@@ -159,6 +199,10 @@
                   <td>ipsum</td>
                   <td>Praesent</td>
                   <td>mauris</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,008</td>
@@ -166,6 +210,10 @@
                   <td>nec</td>
                   <td>tellus</td>
                   <td>sed</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,009</td>
@@ -173,6 +221,10 @@
                   <td>semper</td>
                   <td>porta</td>
                   <td>Mauris</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,010</td>
@@ -180,6 +232,10 @@
                   <td>Vestibulum</td>
                   <td>lacinia</td>
                   <td>arcu</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,011</td>
@@ -187,6 +243,10 @@
                   <td>nulla</td>
                   <td>Class</td>
                   <td>aptent</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,012</td>
@@ -194,6 +254,10 @@
                   <td>sociosqu</td>
                   <td>ad</td>
                   <td>litora</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,013</td>
@@ -201,6 +265,10 @@
                   <td>per</td>
                   <td>conubia</td>
                   <td>nostra</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,014</td>
@@ -208,6 +276,10 @@
                   <td>inceptos</td>
                   <td>himenaeos</td>
                   <td>Curabitur</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
                 <tr>
                   <td>1,015</td>
@@ -215,6 +287,10 @@
                   <td>ligula</td>
                   <td>in</td>
                   <td>libero</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
+				<td>sit</td>
                 </tr>
               </tbody>
             </table>
