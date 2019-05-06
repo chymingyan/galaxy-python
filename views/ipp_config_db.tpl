@@ -14,33 +14,33 @@
    <form class="navbar-form navbar-right">
 <!--数据库编号-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库编号:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+ <!-- <span class="input-group-addon" id="basic-addon1">数据库编号:</span>-->
+  <input type="text" class="form-control" placeholder="数据库编号" aria-describedby="basic-addon1">
 </div>
 <!--数据库IP-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库IP:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  <!--<span class="input-group-addon" id="basic-addon1">数据库IP:</span>-->
+  <input type="text" class="form-control" placeholder="数据库IP" aria-describedby="basic-addon1">
 </div>
 <!--数据库端口-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库端口:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+<!--  <span class="input-group-addon" id="basic-addon1">数据库端口:</span>-->
+  <input type="text" class="form-control" placeholder="数据库端口" aria-describedby="basic-addon1">
 </div>
 <!--数据库用户名-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库用户名:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+ <!-- <span class="input-group-addon" id="basic-addon1">数据库用户名:</span>-->
+  <input type="text" class="form-control" placeholder="数据库用户名" aria-describedby="basic-addon1">
 </div>
 <!--数据库用户密码-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库用户密码:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+ <!-- <span class="input-group-addon" id="basic-addon1">数据库用户密码:</span>-->
+  <input type="text" class="form-control" placeholder="数据库用户密码" aria-describedby="basic-addon1">
 </div>
 <!--服务名称-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">服务名称:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+<!--  <span class="input-group-addon" id="basic-addon1">服务名称:</span>-->
+  <input type="text" class="form-control" placeholder="服务名称" aria-describedby="basic-addon1">
 </div>
 <!--自定义分组-->
 <div class="btn-group">

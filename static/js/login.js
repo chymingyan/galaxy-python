@@ -51,10 +51,11 @@ function login() {
         data:{userName:userName,password:password,hostIp:hostip,hostPort:hostport,serviceName:servicename},
         type:"post",
         dataType:"json",
-		async: false,
-        success:function (msg) {
+		async: true,
+        success:function (msg) {        	
             if(msg.Val === 'success'){
-                window.location.href='/';
+            	alert(msg.Val)
+                //window.location.href='/';
                 if($('input[type="checkbox"]:checked')){
                     setCookie('user',userName,7); //
                     setCookie('pswd',password,7); //

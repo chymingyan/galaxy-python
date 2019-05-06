@@ -71,7 +71,7 @@
   
   
 
-  <script src="/static/js/jquery-3.2.1.min.js"></script>
+  <script src="/static/js/jquery.min.js"></script>
 <script src="/static/js/login.js"></script>
 </body>
 </html>

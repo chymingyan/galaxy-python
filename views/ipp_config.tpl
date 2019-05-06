@@ -14,53 +14,53 @@
    <form class="navbar-form navbar-right">
 <!--主机编号-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">主机编号:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  <!--<span class="input-group-addon" id="basic-addon1">主机编号:</span>-->
+  <input type="text" class="form-control" placeholder="主机编号" aria-describedby="basic-addon1">
 </div>
 <!--主机物理IP-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">主机物理IP:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  <!--<span class="input-group-addon" id="basic-addon1">主机物理IP:</span>-->
+  <input type="text" class="form-control" placeholder="主机屋里IP" aria-describedby="basic-addon1">
 </div>
 <!--主机端口-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">主机端口:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  <!--<span class="input-group-addon" id="basic-addon1">主机端口:</span>-->
+  <input type="text" class="form-control" placeholder="主机端口" aria-describedby="basic-addon1">
 </div>
 <!--数据库软件用户名-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库软件用户名:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+ <!-- <span class="input-group-addon" id="basic-addon1">数据库软件用户名:</span>-->
+  <input type="text" class="form-control" placeholder="数据库软件用户名" aria-describedby="basic-addon1">
 </div>
 <!--数据库用户密码-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库用户密码:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+ <!-- <span class="input-group-addon" id="basic-addon1">数据库用户密码:</span>-->
+  <input type="text" class="form-control" placeholder="数据库用户密码" aria-describedby="basic-addon1">
 </div>
 <!--集群软件用户名-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">集群软件用户名:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+ <!-- <span class="input-group-addon" id="basic-addon1">集群软件用户名:</span>-->
+  <input type="text" class="form-control" placeholder="集群软件用户名" aria-describedby="basic-addon1">
 </div>
 <!--集群软件用户密码-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">集群软件用户密码:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+ <!-- <span class="input-group-addon" id="basic-addon1">集群软件用户密码:</span>-->
+  <input type="text" class="form-control" placeholder="集群软件用户密码" aria-describedby="basic-addon1">
 </div>
 <!--ROOT用户密码-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">ROOT用户密码:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  <!--<span class="input-group-addon" id="basic-addon1">ROOT用户密码:</span>-->
+  <input type="text" class="form-control" placeholder="ROOT用户密码" aria-describedby="basic-addon1">
 </div>
 <!--数据库软件目录-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">数据库软件目录:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+ <!-- <span class="input-group-addon" id="basic-addon1">数据库软件目录:</span>-->
+  <input type="text" class="form-control" placeholder="数据库软件目录" aria-describedby="basic-addon1">
 </div>
 <!--集群软件目录-->
 <div class="input-group">
-  <span class="input-group-addon" id="basic-addon1">集群软件目录:</span>
-  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+<!--  <span class="input-group-addon" id="basic-addon1">集群软件目录:</span>-->
+  <input type="text" class="form-control" placeholder="集群软件目录" aria-describedby="basic-addon1">
 </div>
 <!--主机协议-->
 主机协议:
