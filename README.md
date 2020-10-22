@@ -1,4 +1,4 @@
-# Ipp
+# Galaxy
 Intelligent patrol platform
 
 Supported Databases
