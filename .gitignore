@@ -1,1 +1,4 @@
 .idea
+galaxy/__pycache__/
+inspection/migrations/
+inspection/__pycache__/
