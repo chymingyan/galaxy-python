@@ -3,10 +3,15 @@ from django.db import models
 # Create your models here.
 class Users(models.Model):
     id=models.AutoField(primary_key=True)
-    # phone=models.CharField(max_length=20)
     username=models.CharField(max_length=20)
     password=models.CharField(max_length=50)
     repassword=models.CharField(max_length=50)
     email=models.CharField(max_length=50)
-    # birthday=models.DateField()
-    # regday=models.DateField()
+    isenable=models.BooleanField(default=False)
+    level=models.IntegerField(null=True)
+    createdate=models.DateField(null=True, auto_now_add=True)
+    lastlogintime=models.DateField(null=True,auto_now_add=True)
+
+class UserLevel(models.Model):
+    id=models.AutoField(primary_key=True)
+    levelname=models.CharField(max_length=50)
