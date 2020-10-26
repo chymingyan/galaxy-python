@@ -9,8 +9,8 @@ class Users(models.Model):
     email=models.CharField(max_length=50)
     isenable=models.BooleanField(default=False)
     level=models.IntegerField(null=True)
-    createdate=models.DateField(null=True, auto_now_add=True)
-    lastlogintime=models.DateField(null=True,auto_now_add=True)
+    createdate=models.DateTimeField(null=True, auto_now_add=True)
+    lastlogintime=models.DateTimeField(null=True,auto_now=True)
 
 class UserLevel(models.Model):
     id=models.AutoField(primary_key=True)
