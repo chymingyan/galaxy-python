@@ -1,4 +1,5 @@
-.idea
+.idea/
+.vscode/
 galaxy/__pycache__/
 /galaxy/__pycache__/
 /inspection/migrations/

@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'galaxy.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'galaxydb',
-        'USER': 'galaxy',
-        'PASSWORD': 'galaxy',
-        'HOST': '192.168.0.152',
+        'NAME': 'galaxy',
+        'USER': 'chy',
+        'PASSWORD': 'welcome1',
+        'HOST': '192.168.0.91',
         'PORT': '5432',
         'OPTIONS': {
             # 'options': '-c search_path=jg'
