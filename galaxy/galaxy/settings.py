@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^t!s6a7+1!az3z!ob#zh*$^135h8el=*50)n(c=vm8ep!@irxz'
+SECRET_KEY = 'l&-=dcx%t!x4pw)2noyfw8#bz&1!52j5y!@%udc7v371+^toan'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "inspection"
 ]
 
 MIDDLEWARE = [
@@ -55,8 +54,7 @@ ROOT_URLCONF = 'galaxy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,24 +75,9 @@ WSGI_APPLICATION = 'galaxy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'galaxy',
-        'USER': 'chy',
-        'PASSWORD': 'welcome1',
-        'HOST': '192.168.0.91',
-        'PORT': '5432',
-        'OPTIONS': {
-            # 'options': '-c search_path=jg'
-            'options': '-c search_path=public,jg'
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}
-
-# DATABASE_ROUTERS = ['project_name.database_router.DatabaseAppsRouter']
-DATABASE_ROUTERS = ['galaxy.database_router.DatabaseAppsRouter']
-DATABASE_APPS_MAPPING = {
-    # 'app_name':'database_name',
-    'inspection': 'default',
 }
 
 
@@ -135,5 +118,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
-
