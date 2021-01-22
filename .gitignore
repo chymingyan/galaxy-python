@@ -1,8 +1,8 @@
 .idea/
 .vscode/
-galaxy/__pycache__/
-/galaxy/__pycache__/
-/inspection/migrations/
-/inspection/__pycache__/
-inspection/__pycache__/*
-inspection/__pycache__/
+galaxy-python/galaxy/__pycache__/
+galaxy-python/galaxy/__pycache__/
+galaxy-python/galaxy/inspection/migrations/
+galaxy-python/galaxy/inspection/__pycache__/
+galaxy-python/galaxy/inspection/__pycache__/*
+galaxy-python/galaxy/inspection/__pycache__/
