@@ -18,4 +18,7 @@ def main():
 
 
 if __name__ == '__main__':
+    baseurl = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    templatepat = os.path.join(baseurl, 'galaxy\\templates')
+    print('templates path %s', templatepat)
     main()
